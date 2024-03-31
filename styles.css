@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    border: 0;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+.grad{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    background: linear-gradient(135deg,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: grad 8s ease-in-out infinite;
+}
+@keyframes grad{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position:0% 50% ;
+    }
+}
